@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Registrarse | AJIR</title>
+        <link rel="icon" href="../imagenes/Logo.PNG">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" media="(min-width: 1280px)" href="../css/estilosDesk.css">
+        <link rel="stylesheet" media="(max-width: 1279px) and (min-width: 480px)" href="../css/estilosTablet.css">
+        <link rel="stylesheet" media="(max-width: 479px)" href="../css/estilosMovile.css">
+    </head>
+    <body>
+        <main>
+            <div id="contenedor-registro">
+                <form action="resgistro.php" method="post">
+                    <div class="formulario">
+                        <h2 class="txtin">REGISTRARSE</h1>
+                        <div class="form-element">
+                            <input type="email" name="email" placeholder="correo electronico" required>
+                        </div>
+                        <div class="form-element">
+                            <input type="text" name="nombre" placeholder="nombre de usuario" required>
+                        </div>    
+                        <div class="form-element">
+                            <input type="password" name="contraseña" placeholder="contraseña" required>
+                        </div>
+                        <div class="form-end">
+                            <input class="txtin btn" type="submit" name="enviar" value="Enviar">
+                            <input class="txtin btn" type="reset" name="limpiar" value="Limpiar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,483 @@
+/*------------GENERAL-------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+    font-size: 14px;
+}
+body{
+    background: linear-gradient(130deg, #5D5D5D 30%, #0F0F0F 100%);
+}
+p, a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+li>a{
+    font-size: 0.65rem;
+    margin: 0px 15px 0px 15px;
+}
+.boton>a{
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.txtin{
+    color: #5a5a5a;
+}
+.txtout{
+    color: #BEBEBE;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0 0 0;
+}
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BEBEBE;
+    border-radius: 35px;
+    margin: 0 0 20px 0;
+    width: 90%;
+}
+.intro-txt{
+    margin-left: 10%;
+}
+#logo{
+    position: relative;
+    left: 5%;
+    margin: 10px 0 10px 0;
+    width: 40px;
+    height: 40px;
+}
+#registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+#icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+#hLine{
+    margin-top: 25px;
+    width: 100%;
+    height: 0;
+    border-style: solid;
+    border-color: #AAAAAA;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    height: 100%;
+    border-radius: 15px;
+}
+nav li:hover{
+    background-color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.article-txt{
+    font-size: 0.85rem;
+    margin: 10px 10px 10px 10px;
+}
+.aside-txt{
+    font-size: 0.85rem;
+    margin: 10px 10px 10px 10px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BEBEBE;
+    height: 60px;
+    width: 100%;
+    margin: 50px 0 25px 0;
+}
+.footer-txt{
+    font-size: 0.60rem;
+    text-align: center;
+}
+.redes{
+    margin: 0 10px 0 10px;
+}
+.redes img{
+    width: 30px;
+    height: 30px;
+}
+/*---------HAMBURGUESA ONLY MOVILE----------*/
+#intro-half{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#hamburguesa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 45px;
+    margin: 0 20px 0 0;
+}
+#hamburguesa img{
+    width: 45px;
+    height: 100%;
+}
+.chkbx{
+    display: none;
+}
+#hamburguesa ul{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    border-radius: 15px;
+    height: 150%;
+    top: 100%;
+    background-color: #BEBEBE;
+    display: none;
+    overflow: hidden;
+}
+#hamburguesa li{
+    text-align: center;
+    height: 25%;
+}
+#hamburguesa li:hover{
+    background-color: white;
+}
+#hamburguesa>input.chkbx:checked ~ ul{
+    display: unset;
+}
+nav{
+    display: none;
+}
+/*---------INDEX----------*/
+#contenedor-index{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#slider-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+#slider{
+    border-radius: 35px;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+}
+#slider li{
+    width: 100%;
+}
+#slider ul{
+    display: flex;
+    list-style-type: none;
+    width: 300%;
+    height: 100%;
+
+    animation: slide 20s infinite alternate ease-out;
+}
+#slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide {
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+
+    35%{margin-left: -100%;}
+    60%{margin-left: -100%;}
+
+    65%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+#sliderbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: #BEBEBE;
+}
+.boton:hover{
+    background-color: white;
+}
+aside{
+    background-color: white;
+    border-radius: 25px;
+    height: 100%;
+    width: 300px;
+    margin: 20px 0 0 0;
+}
+/*---------TIEMPO---------*/
+#contenedor-tiempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+}
+article#tiempo{
+    background-color: white;
+    border-radius: 25px;
+    height: 100%;
+    width: 90%;
+}
+#reloj{
+    width: 100px;
+    height: 300px;
+    animation: rotateclock 10s linear infinite;
+    margin: 40px 0 0 0;
+}
+.parte{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    background-color: #BEBEBE;
+    overflow: hidden;
+}
+.top{
+    border-radius: 25px 25px 100px 100px;    
+}
+.bottom{
+    border-radius: 100px 100px 25px 25px;
+}
+.arena{
+    width: 100%;
+    height: 66%;
+    background-color: sandybrown;
+}
+.bottom>.arena{
+    position: relative;
+    animation: arenabottom 10s linear infinite;
+}
+.top>.arena{
+    position: relative;
+    animation: arenatop 10s linear infinite;
+}
+@keyframes arenabottom{
+    0%{bottom: -66%;}
+    33%{bottom: 0;}
+    66%{bottom: 0;}
+    100%{bottom: 33%;}
+}
+@keyframes arenatop{
+    0%{top: 0;}
+    33%{top: 66%;}
+    66%{top: 66%;}
+    100%{top: 66%;}
+}
+@keyframes rotateclock{
+    0%{transform: rotate(0deg);}
+    33%{transform: rotate(0deg);}
+    66%{transform: rotate(180deg);}
+    100%{transform: rotate(180deg);}
+}
+/*-------------JUEGO--------------*/
+#contenedor-juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+article#juego{
+    background-color: white;
+    border-radius: 25px;
+    height: 100%;
+    width: 85%;
+}
+#fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 85%;
+    height: 100%;
+    margin: 20px 0 0 10px;
+}
+.fotos-element{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #BEBEBE;
+    margin: 5px 0 5px 0;
+}
+.fotos-txt{
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+}
+.fotos-element>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transform-origin: top;
+    transition: transform 1s ease-in-out; 
+}
+.fotos-element:hover .foto-interior{ 
+    transform: rotateX(180deg);
+}
+/*------------EVALUAR------------*/
+#contenedor-evaluar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+article#evaluar{
+    background-color: white;
+    border-radius: 25px;
+    height: 60%;
+    width: 80%;
+    margin: 0 0 10px 0;
+}
+article#evaluar>h2 {
+    margin: 10px 10px 10px 10px;
+}
+#ruleta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 30px 0 0 0;
+}
+#rule{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+#ball{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+#ruleta img{
+    width: 100%;
+    height: 100%;
+}
+.rule{
+    animation: rotacion-ruleta 4s infinite linear;
+}
+.ball{
+    animation: rotacion-bola 5s infinite linear;
+}
+@keyframes rotacion-ruleta{ 
+    from { transform: rotate(0deg); } 
+    to { transform: rotate(-359deg); } 
+}
+@keyframes rotacion-bola{ 
+    from { transform: rotate(0deg); } 
+    to { transform: rotate(359deg); } 
+}
+/*-------------REGISTRO--------------*/
+#contenedor-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    margin: 13% 0 0 0;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    height: 100%;
+}
+.form-element{
+    display: flex;
+    justify-content: center;
+    background-color: #BEBEBE;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
+.submit{
+    background-color: #BEBEBE;
+    width: 50%;
+    height: 50px;
+}
+input{
+    border: solid transparent;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+}
+input:focus, input:valid{
+    outline: none;
+    border-radius: 10px;
+}
+.form-end{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+.btn{
+    background-color: #888888;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+}
+.btn:hover {
+    background-color: #525252;
+}
